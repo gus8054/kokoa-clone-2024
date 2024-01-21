@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>코코아톡</title>
+  </head>
+  <body>
+    <main class="app">
+      <section class="app__main">
+        <nav class="app__nav">
+          <ul class="nav__list">
+            <li class="nav__list__item nav__list__item_active">
+              <a href="/" class="nav__link"><i class="fa-solid fa-user"></i></a>
+            </li>
+            <li class="nav__list__item">
+              <a href="/chat-list.html" class="nav__link"
+                ><i class="fa-solid fa-comment"></i
+              ></a>
+            </li>
+            <li class="nav__list__item">
+              <a href="" class="nav__link"
+                ><i class="fa-solid fa-ellipsis"></i
+              ></a>
+            </li>
+          </ul>
+          <ul class="nav__list_config">
+            <li class="nav__list__item">
+              <a href="" class="nav__link"
+                ><i class="fa-regular fa-face-smile"></i
+              ></a>
+            </li>
+            <li class="nav__list__item">
+              <a href="" class="nav__link"
+                ><i class="fa-regular fa-bell"></i
+              ></a>
+            </li>
+            <li class="nav__list__item">
+              <a href="" class="nav__link"><i class="fa-solid fa-gear"></i></a>
+            </li>
+          </ul>
+        </nav>
+        <section class="app__section">
+          <header class="section__header header">
+            <h1 class="header__title">친구</h1>
+            <div class="header__icons">
+              <i class="fa-solid fa-magnifying-glass"></i
+              ><i class="fa-solid fa-user-plus"></i>
+            </div>
+          </header>
+          <div class="section__body">
+            <article class="friends__profile profile_my">
+              <div class="profile__left-column">
+                <div class="profile__img__container">
+                  <img src="https://picsum.photos/200" alt="" />
+                </div>
+                <p class="friends__profile__name">배불뚱이</p>
+              </div>
+              <button
+                class="profile__right-column friends__profile__status-msg"
+              >
+                상태메시지
+              </button>
+            </article>
+            <hr class="profile__hr" />
+            <h3 class="friend__profile__title">업데이트한 프로필 1</h3>
+            <article class="friends__profile profile_update">
+              <div class="profile__left-column">
+                <div class="profile__img__container">
+                  <img src="https://picsum.photos/200" alt="" />
+                </div>
+                <p class="friends__profile__name">배홀쭉이</p>
+              </div>
+            </article>
+            <hr class="profile__hr" />
+            <h3 class="friend__profile__title">즐겨찾기</h3>
+            <article class="friends__profile">
+              <div class="profile__left-column">
+                <div class="profile__img__container">
+                  <img src="https://picsum.photos/200" alt="" />
+                </div>
+                <p class="friends__profile__name">배불룩이</p>
+              </div>
+            </article>
+            <hr class="profile__hr" />
+            <h3 class="friend__profile__title">채널</h3>
+            <article class="friends__profile">
+              <div class="profile__left-column">
+                <div class="profile__img__container">
+                  <img src="https://picsum.photos/200" alt="" />
+                </div>
+                <p class="friends__profile__name">
+                  채널 <span style="color: gray; font-weight: normal">3</span>
+                </p>
+              </div>
+            </article>
+            <hr class="profile__hr" />
+            <h3 class="friend__profile__title">친구 5</h3>
+            <article class="friends__profile">
+              <div class="profile__left-column">
+                <div class="profile__img__container">
+                  <img src="https://picsum.photos/200" alt="" />
+                </div>
+                <p class="friends__profile__name">배뚱뚱일</p>
+              </div>
+              <button class="profile__right-column friends__profile__song">
+                헤어지자말해요 - 박재정
+              </button>
+            </article>
+            <article class="friends__profile">
+              <div class="profile__left-column">
+                <div class="profile__img__container">
+                  <img src="https://picsum.photos/200" alt="" />
+                </div>
+                <p class="friends__profile__name">배뚱뚱이</p>
+              </div>
+              <button class="profile__right-column friends__profile__song">
+                비의 랩소디 - 임재현
+              </button>
+            </article>
+            <article class="friends__profile">
+              <div class="profile__left-column">
+                <div class="profile__img__container">
+                  <img src="https://picsum.photos/200" alt="" />
+                </div>
+                <p class="friends__profile__name">배뚱뚱삼</p>
+              </div>
+              <button class="profile__right-column friends__profile__song">
+                그대만 있다면 - 너드 커넥션
+              </button>
+            </article>
+            <article class="friends__profile">
+              <div class="profile__left-column">
+                <div class="profile__img__container">
+                  <img src="https://picsum.photos/200" alt="" />
+                </div>
+                <p class="friends__profile__name">배뚱뚱사</p>
+              </div>
+              <button class="profile__right-column friends__profile__song">
+                인사 - 범진
+              </button>
+            </article>
+            <article class="friends__profile">
+              <div class="profile__left-column">
+                <div class="profile__img__container">
+                  <img src="https://picsum.photos/200" alt="" />
+                </div>
+                <p class="friends__profile__name">배뚱뚱오</p>
+              </div>
+              <button class="profile__right-column friends__profile__song">
+                예뻤어 - 데이식스
+              </button>
+            </article>
+          </div>
+        </section>
+      </section>
+      <footer class="app__footer">
+        <div class="footer__inner ad">
+          <div class="ad__img__container">
+            <img class="ad__img" src="https://picsum.photos/400/200" alt="" />
+          </div>
+          <div class="ad__content__container">
+            <h3 class="ad__title">NEW 갤럭시 S24, <br />어쩌구저쩌구!</h3>
+            <p class="ad__company">어쩌구 저쩌구 얼씨구 절씨구</p>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

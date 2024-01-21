@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>코코아톡 - 채팅</title>
+  </head>
+  <body>
+    <main class="app">
+      <section class="app__main">
+        <nav class="app__nav">
+          <ul class="nav__list">
+            <li class="nav__list__item">
+              <a href="/" class="nav__link"><i class="fa-solid fa-user"></i></a>
+            </li>
+            <li class="nav__list__item nav__list__item_active">
+              <a href="/chat-list.html" class="nav__link"
+                ><i class="fa-solid fa-comment"></i
+              ></a>
+            </li>
+            <li class="nav__list__item">
+              <a href="" class="nav__link"
+                ><i class="fa-solid fa-ellipsis"></i
+              ></a>
+            </li>
+          </ul>
+          <ul class="nav__list_config">
+            <li class="nav__list__item">
+              <a href="" class="nav__link"
+                ><i class="fa-regular fa-face-smile"></i
+              ></a>
+            </li>
+            <li class="nav__list__item">
+              <a href="" class="nav__link"
+                ><i class="fa-regular fa-bell"></i
+              ></a>
+            </li>
+            <li class="nav__list__item">
+              <a href="" class="nav__link"><i class="fa-solid fa-gear"></i></a>
+            </li>
+          </ul>
+        </nav>
+        <section class="app__section">
+          <header class="section__header header">
+            <h1 class="header__title">채팅</h1>
+            <div class="header__icons">
+              <i class="fa-solid fa-magnifying-glass"></i
+              ><i class="fa-regular fa-comments"></i
+              ><i class="fa-solid fa-comment-medical"></i>
+            </div>
+          </header>
+          <div class="section__body">
+            <article
+              class="chat-list__profile"
+              onclick="location.href='/chatting-room.html';"
+            >
+              <div class="chat-list__profile__left-column profile__left-column">
+                <div class="profile__img__container">
+                  <img src="https://picsum.photos/200" alt="" />
+                </div>
+                <div class="chat-list__profile__content__container">
+                  <p class="chat-list__profile__name">배뚱뚱일</p>
+                  <p class="chat-list__profile__content">어쩌구 저쩌구</p>
+                </div>
+              </div>
+              <p class="chat-list__profile__right-column">오후 10:42</p>
+            </article>
+            <article
+              class="chat-list__profile"
+              onclick="location.href='/chatting-room.html';"
+            >
+              <div class="chat-list__profile__left-column profile__left-column">
+                <div class="profile__img__container">
+                  <img src="https://picsum.photos/200" alt="" />
+                </div>
+                <div class="chat-list__profile__content__container">
+                  <p class="chat-list__profile__name">배뚱뚱이</p>
+                  <p class="chat-list__profile__content">
+                    어쩌구 저쩌구 얼씨구
+                  </p>
+                </div>
+              </div>
+              <p class="chat-list__profile__right-column">오후 10:42</p>
+            </article>
+            <article
+              class="chat-list__profile"
+              onclick="location.href='/chatting-room.html';"
+            >
+              <div class="chat-list__profile__left-column profile__left-column">
+                <div class="profile__img__container">
+                  <img src="https://picsum.photos/200" alt="" />
+                </div>
+                <div class="chat-list__profile__content__container">
+                  <p class="chat-list__profile__name">배뚱뚱삼</p>
+                  <p class="chat-list__profile__content">
+                    어쩌구 저쩌구 얼씨구 절씨구
+                  </p>
+                </div>
+              </div>
+              <p class="chat-list__profile__right-column">오후 10:42</p>
+            </article>
+            <article
+              class="chat-list__profile"
+              onclick="location.href='/chatting-room.html';"
+            >
+              <div class="chat-list__profile__left-column profile__left-column">
+                <div class="profile__img__container">
+                  <img src="https://picsum.photos/200" alt="" />
+                </div>
+                <div class="chat-list__profile__content__container">
+                  <p class="chat-list__profile__name">배뚱뚱사</p>
+                  <p class="chat-list__profile__content">
+                    어쩌구 저쩌구 얼씨구 절씨구 어쩌구 저쩌구
+                  </p>
+                </div>
+              </div>
+              <p class="chat-list__profile__right-column">오후 10:42</p>
+            </article>
+            <article
+              class="chat-list__profile"
+              onclick="location.href='/chatting-room.html';"
+            >
+              <div class="chat-list__profile__left-column profile__left-column">
+                <div class="profile__img__container">
+                  <img src="https://picsum.photos/200" alt="" />
+                </div>
+                <div class="chat-list__profile__content__container">
+                  <p class="chat-list__profile__name">배뚱뚱오</p>
+                  <p class="chat-list__profile__content">
+                    어쩌구 저쩌구 얼씨구 절씨구 어쩌구 저쩌구 얼씨구 절씨구
+                    어쩌구 저쩌구 얼씨구 절씨구 어쩌구 저쩌구 얼씨구 절씨구
+                  </p>
+                </div>
+              </div>
+              <p class="chat-list__profile__right-column">오후 10:42</p>
+            </article>
+          </div>
+        </section>
+      </section>
+      <footer class="app__footer">
+        <div class="footer__inner ad">
+          <div class="ad__img__container">
+            <img class="ad__img" src="https://picsum.photos/400/200" alt="" />
+          </div>
+          <div class="ad__content__container">
+            <h3 class="ad__title">NEW 갤럭시 S24, <br />어쩌구저쩌구!</h3>
+            <p class="ad__company">어쩌구 저쩌구 얼씨구 절씨구</p>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

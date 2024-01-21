@@ -1,0 +1,335 @@
+@font-face {
+  font-family: "SUIT-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+html {
+  font-family: "SUIT-Regular" system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+}
+a {
+  font: inherit;
+  color: inherit;
+}
+img {
+  max-width: 100%;
+}
+.app {
+  width: 500px;
+  height: 100vh;
+  margin: auto;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  position: relative;
+}
+.app__nav {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100px;
+  height: calc(100vh - 200px);
+  background-color: #eee;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+}
+.nav__list {
+}
+.nav__list__item {
+  margin-block: 24px;
+  font-size: 24px;
+  color: gray;
+  opacity: 0.5;
+}
+.nav__list__item:is(:hover, :focus),
+.nav__list__item_active {
+  opacity: 1;
+}
+/* header  */
+.header__icons {
+  color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+/* section */
+.app__section {
+  margin-left: 100px;
+  padding-top: 44px;
+}
+.section__header {
+  margin-inline: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.section__body {
+  overflow-y: scroll;
+  height: calc(100vh - 279px);
+}
+/* friends */
+.friends__profile {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.profile__left-column {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.profile__img__container {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.profile_my .profile__img__container {
+  width: 70px;
+  height: 70px;
+  border-radius: 20px;
+}
+.friends__profile__name {
+  font-weight: bold;
+}
+.friends__profile__status-msg {
+  border: 1px solid #ddd;
+  background-color: transparent;
+  border-radius: 999px;
+  padding: 0.3rem 0.6rem;
+}
+.profile__hr {
+  margin-inline: 20px;
+  margin-block: 10px;
+  border: none;
+  border-top: 1px solid #ddd;
+}
+.friend__profile__title {
+  padding-inline: 20px;
+  color: gray;
+  font-size: 0.8rem;
+}
+.profile_update .profile__left-column {
+  flex-direction: column;
+  font-size: 0.8rem;
+}
+.friends__profile__song {
+  max-width: 10rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border: 2px solid rgb(84, 137, 6);
+  padding: 0.3rem 0.6rem;
+  background-color: transparent;
+  font: inherit;
+  border-radius: 9999px;
+}
+/* footer  */
+.app__footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  left: 0px;
+  height: 200px;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__inner {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.ad__img__container {
+  width: 200px;
+  aspect-ratio: 2 / 1;
+  flex-basis: 40%;
+}
+.ad__content__container {
+  line-height: 1.5;
+}
+.ad__title {
+  font-weight: bold;
+}
+.ad__company {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  color: gray;
+}
+/* chat-list  */
+.chat-list__profile {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 383px;
+  gap: 1rem;
+}
+.chat-list__profile:hover {
+  background-color: #ddd;
+  cursor: pointer;
+}
+.chat-list__profile__name {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+.chat-list__profile__left-column {
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+.chat-list__profile__content__container {
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+.chat-list__profile__content {
+  width: 100%;
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: gray;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  line-height: 1.2;
+}
+.chat-list__profile__right-column {
+  margin-top: 0.8rem;
+  color: gray;
+  font-size: 0.8rem;
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+/* chatting room */
+.chatting-room__header {
+  border-top: 40px solid green;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.chatting-room__title {
+  font-size: 1.2rem;
+}
+.chatting-room__icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  color: gray;
+}
+.chatting-room__main {
+  height: calc(100vh - 250px);
+  overflow-y: scroll;
+}
+.chatting-room__main table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.8rem;
+}
+thead {
+  background-color: #eee;
+  color: gray;
+}
+thead th:nth-child(1) {
+  width: 10%;
+}
+
+thead th:nth-child(2) {
+  width: 18%;
+}
+
+thead th:nth-child(3) {
+  width: 18%;
+}
+
+thead th:nth-child(4) {
+  width: 18%;
+}
+thead th:nth-child(5) {
+  width: 18%;
+}
+thead th:nth-child(6) {
+  width: 18%;
+}
+th {
+  background-color: #eee;
+  color: gray;
+}
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 0.4rem;
+}
+.chatting-room__time {
+  color: gray;
+  background-color: #eee;
+  text-align: center;
+}
+.chatting-room__friend__name {
+  font-weight: bold;
+}
+.chatting-room__chat__time {
+  font-size: 0.7rem;
+  color: gray;
+}
+.chatting-room__my_chat {
+  background-color: cornsilk;
+}
+.form__container {
+  height: 150px;
+  background-color: #eee;
+}
+.input__container {
+  height: 100px;
+  display: flex;
+  align-items: stretch;
+}
+.input__left-column {
+  width: calc(10% - 1px);
+
+  color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ddd;
+}
+.input__right-column {
+  width: 90%;
+  border: none;
+  outline: none;
+  padding: 1rem;
+  vertical-align: top;
+}
+.form__config-container {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 20px;
+  font-size: 1.5rem;
+}
+.form__icons {
+  display: flex;
+  gap: 1rem;
+  color: gray;
+}
+.form__button {
+  border: none;
+  outline: none;
+  padding: 0.4rem 1.2rem;
+  background-color: #ddd;
+  color: gray;
+}
