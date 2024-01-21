@@ -17,6 +17,13 @@ a {
 img {
   max-width: 100%;
 }
+i:hover {
+  animation: 1s ease-in-out 0s pointer-animation;
+  animation-iteration-count: infinite;
+}
+.pc {
+  display: none;
+}
 .app {
   width: 500px;
   height: 100vh;
@@ -332,4 +339,27 @@ td {
   padding: 0.4rem 1.2rem;
   background-color: #ddd;
   color: gray;
+}
+@media screen and (width >= 600px) {
+  .pc {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+  .app {
+    display: none;
+  }
+}
+@keyframes pointer-animation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
